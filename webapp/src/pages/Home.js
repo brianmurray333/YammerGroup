@@ -6,7 +6,7 @@ import CloseIcon from "../assets/closeIcon";
 function Home() {
   const [showModal,setShowModal] = useState(true)
   const onClose = () => {
-    alert("close modal");
+    alert("Modal closed. You will need to refresh to review the modal");
     setShowModal(false)
   };
 
