@@ -1,0 +1,22 @@
+.primary-btn-disabled{
+    background:#aeb4e9;
+    border:0px;
+    padding:12px 12px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+
+.primary-btn{
+    background:#6b7dff;
+    border:0px;
+    padding:12px 12px;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+
