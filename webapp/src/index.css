@@ -1,4 +1,4 @@
-body {
+body,textarea {
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
