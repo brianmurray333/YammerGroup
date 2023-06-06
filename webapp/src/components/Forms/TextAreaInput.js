@@ -4,7 +4,7 @@ import "./Forms.css";
 function TextAreaInput({ type, id, placeholder, setValue }) {
   return (
     <textarea
-      ononChange={(e) => setValue(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
       className="text-input"
       placeholder={placeholder}
       type={type}

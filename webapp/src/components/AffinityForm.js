@@ -6,11 +6,11 @@ import SelectInput from "./Forms/SelectInput";
 import TextAreaInput from "./Forms/TextAreaInput";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import AffinityKeyInput from "./AffinityKeyInput";
+import MultiSelectInput from "./Forms/MultiSelect";
 
 function AffinityForm({ id }) {
   const [affinityKey, setAffinityKey] = React.useState("");
   const [listName,setListName] = React.useState("")
-  const [listToAdd,setListToAdd] = React.useState("")
   const [referral,setReferral] = React.useState("")
   const [offer,setOffer] = React.useState("")
   const [listType,setListType] = React.useState("")
@@ -23,7 +23,7 @@ function AffinityForm({ id }) {
 
   const [list,setList] = useState([
     {
-      id: 450,
+      id: 250,
       type: 0,
       name: "My List of People",
       public: true,
@@ -106,7 +106,6 @@ function AffinityForm({ id }) {
   const downloadJson = () =>{
     const jsonData = {
       listName:listName,
-      listToAdd:listToAdd,
       referral:referral,
       offer:offer,
       listType:listType,
@@ -127,6 +126,18 @@ function AffinityForm({ id }) {
     document.body.removeChild(link);
   }
 
+
+  
+  
+  // Format options as an array of React elements
+  const options = list.map((option) => (
+    <option key={option.id} value={option.id}>
+      {option.name}
+    </option>
+  ));
+  
+  const placeholder = 'Select list to add';
+
   return (
     <div id={id} className="affinityForm">
       <div className="form">
@@ -138,7 +149,7 @@ function AffinityForm({ id }) {
         {affinityKey && (
           <div className="form-row">
             <label htmlFor="listName">Select Lists to Add:</label>
-            <SelectInput setValue={setListToAdd} type="select" id="name" options={list} />
+            <MultiSelectInput options={options} placeholder={placeholder}/>
           </div>
         )}
 
