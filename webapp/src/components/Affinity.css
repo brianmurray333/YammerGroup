@@ -1,0 +1,23 @@
+.affinityInput{
+    padding:0px 0px 0px 0px
+}
+
+
+.affinityInput_form{
+    display:flex
+}
+
+
+.affinityInput .info{
+    font-size:12px;
+    text-align:start;
+    padding:0px 0px
+}
+
+
+.affinityApiForm{
+    display:flex
+}
+
+
+
