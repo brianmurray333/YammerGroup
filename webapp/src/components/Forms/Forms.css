@@ -192,12 +192,14 @@
   border: 1px solid #ccc;
   background-color: #fff;
   z-index: 10;
+  font-size:14px
 }
 
 .option {
   padding: 8px 0px;
   cursor: pointer;
   list-style-type: "☐";
+  font-size:14px
 }
 
 .option.selected {
@@ -217,8 +219,10 @@
   padding: 4px 8px;
   border-radius: 4px;
   background-color: #e0e0e0;
+  font-size:14px
 }
 
 .placeholder {
   color: #888;
+  font-size:14px
 }

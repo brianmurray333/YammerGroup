@@ -91,6 +91,24 @@ function AffinityForm({ id }) {
       owner_id: 38706,
       list_size: 50,
     },
+
+    {
+      id: 523,
+      type: 1,
+      name: "My List of Countries",
+      public: true,
+      owner_id: 38706,
+      list_size: 50,
+    },
+
+    {
+      id: 523,
+      type: 1,
+      name: "My List of Devices",
+      public: true,
+      owner_id: 38706,
+      list_size: 50,
+    },
   ])
   const referrals = [{ id: 0, name: "Member Intro Template" },{ id: 1, name: "Auditor Intro Template" }, { id: 2, name: "Founder Intro Template" }];
 

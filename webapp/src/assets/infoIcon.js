@@ -1,4 +1,5 @@
 import React from "react";
+import "./icons.css"
 
 function InfoIcon() {
   return (
@@ -13,11 +14,11 @@ function InfoIcon() {
     >
       <g
         fill="#818cdb"
-        fillrule="nonzero"
+        fillRule="nonzero"
         stroke="none"
         strokeWidth="1"
         strokeLinecap="butt"
-        strokelinejoin="miter"
+        strokeLinejoin="miter"
         strokeMiterlimit="10"
         strokeDasharray=""
         strokeDashoffset="0"
