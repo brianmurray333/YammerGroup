@@ -20,6 +20,9 @@ function AffinityForm({ id }) {
   const [listItem, setListItem] = useState("");
   const [list, setList] = useState(lists);
 
+  //state of the dropdown
+  const [isOpen,setIsOpen] = useState(false)
+
   const referrals = [
     { id: 0, name: "Member Intro Template" },
     { id: 1, name: "Auditor Intro Template" },
@@ -89,8 +92,8 @@ function AffinityForm({ id }) {
 
         {affinityKey && (
           <div className="form-row">
-            <label htmlFor="listName">Select Lists to Add:</label>
-            <MultiSelectInput options={options} placeholder={placeholder} />
+            <label onClick={()=>setIsOpen(!isOpen)} htmlFor="listName">Select Lists to Add:</label>
+            <MultiSelectInput isOpen={isOpen} setIsOpen={setIsOpen} options={options} placeholder={placeholder} />
           </div>
         )}
 
@@ -123,7 +126,7 @@ function AffinityForm({ id }) {
           />
         </div>
 
-        <div className="form-row">
+        <div  className="form-row">
           <label htmlFor="offerNotifications">
             List Type: <InfoIcon />{" "}
           </label>

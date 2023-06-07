@@ -207,12 +207,14 @@
 .option.selected {
   background-color: #f2f2f2;
   list-style-type: "☑";
+  font-size:14px
 }
 
 .selected-options {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+  font-size:14px
 }
 
 .selected-option {
@@ -221,10 +223,21 @@
   padding: 4px 8px;
   border-radius: 4px;
   background-color: #e0e0e0;
-  font-size:14px
+  font-size:14px;
+  font-weight:500
 }
 
 .placeholder {
   color: #888;
   font-size:14px
+}
+
+
+
+.dropdown-search{
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 13px;
+  width:360px;
+  border:1px solid 
 }
