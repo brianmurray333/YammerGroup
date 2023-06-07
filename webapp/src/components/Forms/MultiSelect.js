@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const MultiSelectDropdown = ({ options, placeholder}) => {
+const MultiSelectDropdown = ({ options, placeholder }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOptionClick = (optionValue) => {
     if (selectedOptions.includes(optionValue)) {
-      setSelectedOptions(selectedOptions.filter((option) => option !== optionValue));
+      setSelectedOptions(
+        selectedOptions.filter((option) => option !== optionValue)
+      );
     } else {
       setSelectedOptions([...selectedOptions, optionValue]);
     }
@@ -30,14 +32,16 @@ const MultiSelectDropdown = ({ options, placeholder}) => {
             <span className="placeholder">{placeholder}</span>
           )}
         </div>
-        <div className={`dropdown-arrow ${isOpen ? 'open' : ''}`}></div>
+        <div className={`dropdown-arrow ${isOpen ? "open" : ""}`}></div>
       </div>
       {isOpen && (
         <ul className="dropdown-options">
           {options.map((option) => (
             <li
               key={option}
-              className={`option ${selectedOptions.includes(option) ? 'selected' : ''}`}
+              className={`option ${
+                selectedOptions.includes(option) ? "selected" : ""
+              }`}
               onClick={() => handleOptionClick(option)}
             >
               {option}

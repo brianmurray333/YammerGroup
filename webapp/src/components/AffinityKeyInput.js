@@ -1,14 +1,14 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import TextInput from "./Forms/TextInput";
 import PrimaryButton from "./Buttons/PrimaryButton";
 import "./Affinity.css";
 import axios from "axios"
 
 function AffinityKeyInput({ setAffinityKey,setList}) {
-  const [apiKey, setApiKey] = React.useState("");
-  const [disabled, setDisabled] = React.useState(true);
+  const [apiKey, setApiKey] = useState("");
+  const [disabled, setDisabled] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (apiKey.length > 3) {
       setDisabled(false);
     }
@@ -18,7 +18,7 @@ function AffinityKeyInput({ setAffinityKey,setList}) {
   }, [apiKey]);
 
   const saveAPIKey = () => {
-    //set the api value in session storage
+    //save the api key in session storage
     sessionStorage.setItem("affinityAPIkey", apiKey);
 
     // call API to fetch the lists
@@ -30,6 +30,7 @@ function AffinityKeyInput({ setAffinityKey,setList}) {
     }
     ).then((response)=>{
       console.log(response)
+      //set the list with the data from the endpoint
       // setList(response.data)
     }).catch((error)=>{
       console.log(error)

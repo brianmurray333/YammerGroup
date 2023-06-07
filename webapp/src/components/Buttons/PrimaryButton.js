@@ -1,10 +1,16 @@
-import React from 'react'
-import "./Button.css"
+import React from "react";
+import "./Button.css";
 
-function PrimaryButton({title,onClick,disabled}) {
+function PrimaryButton({ title, onClick, disabled }) {
   return (
-    <button onClick={onClick} disabled={disabled} className={ disabled ? "primary-btn-disabled":"primary-btn"}>{title}</button>
-  )
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={disabled ? "primary-btn-disabled" : "primary-btn"}
+    >
+      {title}
+    </button>
+  );
 }
 
-export default PrimaryButton
+export default PrimaryButton;

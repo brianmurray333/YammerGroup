@@ -1,0 +1,83 @@
+[
+    {
+      "id": 250,
+      "type": 0,
+      "name": "My List of People",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 67
+    },
+    {
+      "id": 383,
+      "type": 1,
+      "name": "My List of Organizations",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 323,
+      "type": 1,
+      "name": "My List of Staff",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 393,
+      "type": 1,
+      "name": "My List of Marketers",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 403,
+      "type": 1,
+      "name": "My List of Houses",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 503,
+      "type": 1,
+      "name": "My List of Offices",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 513,
+      "type": 1,
+      "name": "My List of Addresses",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 523,
+      "type": 1,
+      "name": "My List of Places",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 523,
+      "type": 1,
+      "name": "My List of Countries",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    },
+    {
+      "id": 523,
+      "type": 1,
+      "name": "My List of Devices",
+      "public": true,
+      "owner_id": 38706,
+      "list_size": 50
+    }
+  ]
+  
